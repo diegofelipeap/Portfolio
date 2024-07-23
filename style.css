@@ -22,9 +22,10 @@ body {
     padding-top: 8vh;
 }
 
-.max-content{
+.max-content {
     font-size: 18px;
 }
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -96,7 +97,9 @@ section {
 
 h1,
 h2,
-h3, b, strong{
+h3,
+b,
+strong {
     color: #4CAF50;
 }
 
@@ -205,7 +208,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .logo{
+    .logo {
         margin-left: 20px;
     }
 }

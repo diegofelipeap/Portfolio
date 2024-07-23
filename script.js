@@ -56,6 +56,7 @@ const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
+    const header = document.querySelector('nav'); // Ajuste aqui caso seu cabeçalho tenha outro seletor
 
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
@@ -70,6 +71,35 @@ const navSlide = () => {
 
         burger.classList.toggle('toggle');
     });
-}
 
-navSlide();
+    // Adicionar rolagem suave para links de navegação
+    navLinks.forEach(link => {
+        link.addEventListener('click', event => {
+            event.preventDefault();  // Prevenir o comportamento padrão de âncoras
+            const targetId = link.querySelector('a').getAttribute('href').substring(1);  // Obtém o ID da seção alvo
+            const targetSection = document.getElementById(targetId);
+
+            // Calcular a posição do título da seção, ajustando pela altura do cabeçalho
+            const headerHeight = header.offsetHeight;
+            const targetPosition = targetSection.offsetTop - headerHeight;
+
+            // Rolar suavemente até a posição do título
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+
+            // Fechar o menu de navegação após o clique
+            nav.classList.remove('nav-active');
+            burger.classList.remove('toggle');
+            navLinks.forEach(link => {
+                link.style.animation = '';
+            });
+        });
+    });
+};
+
+// Certificar-se de que o DOM está completamente carregado antes de adicionar eventos
+document.addEventListener('DOMContentLoaded', () => {
+    navSlide();
+});
