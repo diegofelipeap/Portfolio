@@ -22,6 +22,9 @@ body {
     padding-top: 8vh;
 }
 
+.max-content{
+    font-size: 18px;
+}
 nav {
     display: flex;
     justify-content: space-around;
@@ -93,7 +96,7 @@ section {
 
 h1,
 h2,
-h3 {
+h3, b, strong{
     color: #4CAF50;
 }
 
