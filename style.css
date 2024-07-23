@@ -201,6 +201,10 @@ footer {
     .projetos-grid {
         grid-template-columns: 1fr;
     }
+
+    .logo{
+        margin-left: 20px;
+    }
 }
 
 .nav-active {

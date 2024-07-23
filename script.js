@@ -1,6 +1,6 @@
 function criarProjeto(numero) {
     const projetos = [
-        { titulo: "Projeto A", descricao: "Este projeto é um Jokenpô, inspirado nos games da franquia Alex Kidd, confira!", imagem: "projeto-a.jpg", link: "https://www.linkedin.com/in/pereira-diego-dev/" },
+        { titulo: "Projeto A", descricao: "Este projeto é um Jokenpô, inspirado nos games da franquia Alex Kidd, confira!", imagem: "images/jokenpô Inicial.png", link: "https://diegofelipeap.github.io/Game-Jokenpo/" },
         { titulo: "Projeto B", descricao: "Descrição do Projeto B", imagem: "projeto-b.jpg", link: "https://www.linkedin.com/in/pereira-diego-dev/" },
         { titulo: "Projeto C", descricao: "Descrição do Projeto C", imagem: "projeto-c.jpg", link: "https://www.linkedin.com/in/pereira-diego-dev/" },
         { titulo: "Projeto D", descricao: "Descrição do Projeto D", imagem: "projeto-d.jpg", link: "https://www.linkedin.com/in/pereira-diego-dev/" },
