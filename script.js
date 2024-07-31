@@ -1,11 +1,9 @@
 function criarProjeto(numero) {
     const projetos = [
-        { titulo: "Microsoft Page", descricao: "Landing Page da Microsoft criada em HTML, CSS e Bootstrap", imagem: "images/microsoft-project.webp", link: "https://diegofelipeap.github.io/Microsoft-Page/#" },
         { titulo: "Cadastro de Usuários", descricao: "Aplicação de registro criado em React com React Rooks e Styled-Components", imagem: "images/userRegistration.webp", link: "https://user-registration-woad.vercel.app" },
         { titulo: "API de Cadastro", descricao: "Back-End da aplicação Cadastro de Usuários, feita em Node.js", imagem: "images/API-user.webp", link: "https://github.com/diegofelipeap/api-de-usuarios-node" },
         { titulo: "Coinversor", descricao: "Conversor de Moedas em tempo real feito em JavaScript, HTML e CSS e API de terceiros", imagem: "images/coverCoinversor.webp", link: "https://diegofelipeap.github.io/Conversor-de-Moeda/" },
         { titulo: "DevBot", descricao: "ChatBot criado em HTML, CSS e JavaScript. Consome API da OpenAI", imagem: "images/devbot.webp", link: "https://devbot-dp.netlify.app" },
-        { titulo: "Itaú Page", descricao: "Landing Page do banco Itaú feito em React com React Rooks e Styled-Components", imagem: "images/itau.webp", link: "https://banco-itau-liard.vercel.app" },
         { titulo: "Sorteador", descricao: "Sorteador de números e nomes em tempo real criado em JavaScript, CSS e HTML", imagem: "images/sorteador.webp", link: "https://diegofelipeap.github.io/Sorteador/" },
         { titulo: "Jokenpô", descricao: "Pedra, Papel, Tesoura Criado em HTML, CSS e JavaScript", imagem: "images/jokenpo.webp", link: "https://diegofelipeap.github.io/Game-Jokenpo/" },
         { titulo: "Enfoco - Portal de Notícias", descricao: "Landing Page criada em HTML e CSS", imagem: "images/efo.webp", link: "https://diegofelipeap.github.io/EFO---Mundiware/" },
@@ -13,13 +11,15 @@ function criarProjeto(numero) {
         { titulo: "Analyx", descricao: "Página de Social Media criada em JavaScript, HTML e CSS", imagem: "images/analyx.webp", link: "https://analix.netlify.app" },
         { titulo: "Starbucks", descricao: "Landin Page criada em JavaScript, HTML e CSS", imagem: "images/starbucks.webp", link: "https://diegofelipeap.github.io/starbucks/" },
         { titulo: "Super Mario", descricao: "Site criado em HTML CSS e JavaScript", imagem: "images/superMario.webp", link: "https://site-supermariobydiego-dev.netlify.app" },
+        { titulo: "Microsoft Page", descricao: "Landing Page da Microsoft criada em HTML, CSS e Bootstrap", imagem: "images/microsoft-project.webp", link: "https://diegofelipeap.github.io/Microsoft-Page/#" },
+        { titulo: "Itaú Page", descricao: "Landing Page do banco Itaú feito em React com React Rooks e Styled-Components", imagem: "images/itau.webp", link: "https://banco-itau-liard.vercel.app" },
         { titulo: "Menu Hamburgueria", descricao: "Criado em HTML, CSS e JavaScript, com funções map, reduce e filter", imagem: "images/menu-burgueria.webp", link: "https://diegofelipeap.github.io/Menu-Hamburgueria/" },
         { titulo: "RDR Login - RockStar", descricao: "Tela de Login com arte do Red Dead Redemption feita com HTML, CSS e JavaScript", imagem: "images/RDR.webp", link: "https://diegofelipeap.github.io/Tela-Login-RDR-/" },
         { titulo: "We Care", descricao: "Página de Petshop feita em HTML e CSS", imagem: "images/wecare.webp", link: "https://wecaresitebydiegopereira.netlify.app" },
         { titulo: "Easy Shopping", descricao: "Página feita em HTML e CSS", imagem: "images/easeShopping.webp", link: "https://easyshoppingbydiegopereira.netlify.app" },
         { titulo: "FlexiLease Autos", descricao: "Repositório da API criada em Node.js", imagem: "images/flexiliease.webp", link: "https://github.com/diegofelipeap/flexilease-autos" },
         { titulo: "VetClinic", descricao: "Repositório da API criada em Node.js", imagem: "images/vetclinic.webp", link: "https://github.com/diegofelipeap/Projeto-VetClinic" },
-        { titulo: "API Video Manager", descricao: "Repositório da API criada em Node.js", imagem: "images/video-manager.webp", link: "https://github.com/diegofelipeap/manager-video-api-node" },
+        { titulo: "API Video Manager", descricao: "Repositório da API criada em Node.js", imagem: "images/video-manager.webp", link: "https://github.com/diegofelipeap/manager-video-api-node" }
         //Adicionar mais projetos
     ];
 
