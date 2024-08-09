@@ -3,6 +3,7 @@ function criarProjeto(numero) {
         { titulo: "Cadastro de Usuários", descricao: "Aplicação de registro criado em React com React Rooks e Styled-Components", imagem: "images/userRegistration.webp", link: "https://user-registration-woad.vercel.app" },
         { titulo: "API de Cadastro", descricao: "Back-End da aplicação Cadastro de Usuários, feita em Node.js", imagem: "images/API-user.webp", link: "https://github.com/diegofelipeap/api-de-usuarios-node" },
         { titulo: "Coinversor", descricao: "Conversor de Moedas em tempo real feito em JavaScript, HTML e CSS e API de terceiros", imagem: "images/coverCoinversor.webp", link: "https://diegofelipeap.github.io/Conversor-de-Moeda/" },
+        { titulo: "Link Tree", descricao: "Site responsivo criado em HTML e CSS", imagem: "images/Linktree.webp", link: "https://diegofelipeap.github.io/LinkTree-dev/" },
         { titulo: "DevBot", descricao: "ChatBot criado em HTML, CSS e JavaScript. Consome API da OpenAI", imagem: "images/devbot.webp", link: "https://devbot-dp.netlify.app" },
         { titulo: "Sorteador", descricao: "Sorteador de números e nomes em tempo real criado em JavaScript, CSS e HTML", imagem: "images/sorteador.webp", link: "https://diegofelipeap.github.io/Sorteador/" },
         { titulo: "Jokenpô", descricao: "Pedra, Papel, Tesoura Criado em HTML, CSS e JavaScript", imagem: "images/jokenpo.webp", link: "https://diegofelipeap.github.io/Game-Jokenpo/" },
@@ -46,7 +47,7 @@ function carregarProjetos(quantidade, total) {
     }
 }
 
-const totalProjetos = 20; //atualizar valor para manutenção.
+const totalProjetos = 21; //atualizar valor para manutenção.
 let projetosExibidos = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
