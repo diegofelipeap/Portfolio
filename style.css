@@ -55,6 +55,10 @@ nav {
 
 .nav-links li {
     list-style: none;
+    :hover{
+        color: #b40ac7;
+        transition: 0.5s;
+    }
 }
 
 .nav-links a {
@@ -93,6 +97,44 @@ main {
 section {
     margin-bottom: 2rem;
     width: 100%;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+figure>img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #9c07ad;
+}
+
+.download-cv {
+    display: inline-block;
+    background-color: #9c07ad;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-cv:hover {
+    background-color: #FFD700;
+    box-shadow: 0 0 10px #FFD700;
+    transform: translateY(-2px);
+}
+
+.download-cv i {
+    margin-right: 8px;
 }
 
 h1,
@@ -146,14 +188,22 @@ strong {
 }
 
 .exibir-mais {
-    background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
     cursor: pointer;
     margin-top: 1rem;
-    display: block;
+    display: inline-block;
+    background-color: #9c07ad;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+}
+
+.exibir-mais:hover {
+    transform: translateY(-2px);
 }
 
 .social-icons {
@@ -207,6 +257,7 @@ footer {
     color: white;
     text-align: center;
     border-radius: 10px;
+    font-size: 18px;
 }
 
 .modal-content h2 {
@@ -231,6 +282,11 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    figure>img {
+        width: 150px;
+        height: 150px;
+    }
+
     .modal-content {
         margin: 30% auto;
         padding: 15px;
@@ -278,6 +334,19 @@ footer {
 
     .logo {
         margin-left: 20px;
+    }
+
+    figure>img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .download-cv {
+        display: block;
+        text-align: center;
+        margin: 15px auto 0 auto;
+        max-width: 200px;
+        padding: 10px 0;
     }
 }
 
