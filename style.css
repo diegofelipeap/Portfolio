@@ -181,6 +181,74 @@ footer {
     width: 100%;
 }
 
+.blur {
+    filter: blur(5px);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #222;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 600px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.modal-content h2 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+#fechar-aviso {
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+#fechar-aviso:hover {
+    background-color: #FFD700;
+    box-shadow: 0 0 10px #FFD700;
+}
+
+@media screen and (max-width: 600px) {
+    .modal-content {
+        margin: 30% auto;
+        padding: 15px;
+    }
+
+    .modal-content h2 {
+        font-size: 1.5em;
+    }
+
+    .modal-content p {
+        font-size: 0.9em;
+    }
+
+    #fechar-aviso {
+        padding: 8px 16px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .nav-links {
         position: fixed;

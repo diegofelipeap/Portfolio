@@ -51,8 +51,12 @@ function carregarProjetos(quantidade, total) {
 const totalProjetos = 22; //atualizar valor para manutenção.
 let projetosExibidos = 0;
 
+
 document.addEventListener('DOMContentLoaded', () => {
     const botaoExibirMais = document.getElementById('exibir-mais');
+    const modal = document.getElementById('aviso-modal');
+    const fecharAviso = document.getElementById('fechar-aviso');
+    const mainElements = document.querySelectorAll('body > *:not(#aviso-modal)');
 
     function exibirMaisProjetos() {
         carregarProjetos(projetosExibidos, totalProjetos);
@@ -62,12 +66,29 @@ document.addEventListener('DOMContentLoaded', () => {
             botaoExibirMais.style.display = 'none';
         }
     }
-
-    // Carrega os primeiros projetos
     exibirMaisProjetos();
 
-    // Adiciona o evento de clique ao botão
     botaoExibirMais.addEventListener('click', exibirMaisProjetos);
+
+    // Exibir o modal e aplicar blur ao fundo quando a página carregar
+    modal.style.display = "block";
+    mainElements.forEach(element => element.classList.add('blur'));
+
+    // Função para fechar o modal e remover o blur
+    function fecharModal() {
+        modal.style.display = "none";
+        mainElements.forEach(element => element.classList.remove('blur'));
+    }
+
+    fecharAviso.onclick = fecharModal;
+
+    // Fechar o modal se o usuário clicar fora dele
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            fecharModal();
+        }
+    }
+
 });
 
 const navSlide = () => {
