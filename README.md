@@ -25,9 +25,9 @@ Você pode visualizar a versão ao vivo do portfólio [aqui](https://portfolio-d
 - `style.css`: Arquivo de estilos CSS para a aparência do portfólio.
 - `script.js`: Arquivo JavaScript para interações e funcionalidades dinâmicas.
 
-## 📸 Imagens dos Projetos
+## 📸 Imagens dos Projetos e Documentos
 
-As imagens dos projetos estão localizadas na pasta `images` e são utilizadas para exibir visualmente cada projeto na seção de Projetos.
+As imagens dos projetos estão localizadas na pasta `images` e são utilizadas para exibir visualmente cada projeto na seção de Projetos. O Currículo está localizado na pasta `doc`.
 
 ## 🤔 Observações
 
