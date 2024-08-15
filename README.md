@@ -1,6 +1,6 @@
 # Meu Portfólio Full-Stack
 
-Bem-vindo ao meu portfólio! Este projeto foi desenvolvido para apresentar meus trabalhos e habilidades como desenvolvedor Full-Stack. Abaixo, você encontrará informações sobre o projeto, como executá-lo localmente e outros detalhes importantes.
+Bem-vindo ao meu portfólio! Este projeto foi desenvolvido para apresentar meus trabalhos e habilidades como desenvolvedor Full-Stack. Abaixo, você encontrará informações sobre o projeto.
 
 ## 🎨 Demonstração
 
